@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StreamX | Serviços Digitais</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0a0a0a;
+    color: white;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    font-size: 26px;
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(90deg, red, lime);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.section {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background: #111;
+    margin: 10px;
+    padding: 15px;
+    width: 220px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 15px red, 0 0 15px lime;
+    transform: scale(1.05);
+}
+
+.price {
+    color: #00ff88;
+    margin: 10px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, red, lime);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>Serviços Digitais Premium</header>
+
+<section class="section">
+<h2>📺 Streamings</h2>
+<div class="container">
+
+<div class="card"><h3>Netflix</h3><p class="price">R$6</p><button onclick="comprar('Netflix')">Comprar</button></div>
+<div class="card"><h3>Prime Video</h3><p class="price">R$6</p><button onclick="comprar('Prime Video')">Comprar</button></div>
+<div class="card"><h3>HBO Max</h3><p class="price">R$6</p><button onclick="comprar('HBO Max')">Comprar</button></div>
+<div class="card"><h3>Paramount+</h3><p class="price">R$5</p><button onclick="comprar('Paramount+')">Comprar</button></div>
+<div class="card"><h3>Disney+</h3><p class="price">R$6</p><button onclick="comprar('Disney+')">Comprar</button></div>
+<div class="card"><h3>Crunchyroll</h3><p class="price">R$6</p><button onclick="comprar('Crunchyroll')">Comprar</button></div>
+<div class="card"><h3>Globoplay</h3><p class="price">R$6</p><button onclick="comprar('Globoplay')">Comprar</button></div>
+<div class="card"><h3>Claro TV+</h3><p class="price">R$7</p><button onclick="comprar('Claro TV+')">Comprar</button></div>
+<div class="card"><h3>Premiere</h3><p class="price">R$7</p><button onclick="comprar('Premiere')">Comprar</button></div>
+
+</div>
+</section>
+
+<section class="section">
+<h2>🛠 Ferramentas & Música</h2>
+<div class="container">
+
+<div class="card"><h3>Canva Pro</h3><p class="price">R$5</p><button onclick="comprar('Canva Pro')">Comprar</button></div>
+<div class="card"><h3>Canva Pro Dono</h3><p class="price">R$7</p><button onclick="comprar('Canva Pro Dono')">Comprar</button></div>
+<div class="card"><h3>YouTube Premium</h3><p class="price">R$6</p><button onclick="comprar('YouTube Premium')">Comprar</button></div>
+<div class="card"><h3>YouTube Premium ADM</h3><p class="price">R$10</p><button onclick="comprar('YouTube Premium ADM')">Comprar</button></div>
+<div class="card"><h3>Spotify</h3><p class="price">R$7</p><button onclick="comprar('Spotify')">Comprar</button></div>
+<div class="card"><h3>Spotify Família</h3><p class="price">R$12</p><button onclick="comprar('Spotify Família')">Comprar</button></div>
+<div class="card"><h3>CapCut Pro</h3><p class="price">R$7</p><button onclick="comprar('CapCut Pro')">Comprar</button></div>
+<div class="card"><h3>CapCut Compartilhado</h3><p class="price">R$5</p><button onclick="comprar('CapCut Compartilhado')">Comprar</button></div>
+
+</div>
+</section>
+
+<section class="section">
+<h2>🤖 IA & Outros</h2>
+<div class="container">
+
+<div class="card"><h3>Gemini Pro</h3><p class="price">R$7</p><button onclick="comprar('Gemini Pro')">Comprar</button></div>
+<div class="card"><h3>ChatGPT Plus</h3><p class="price">R$7</p><button onclick="comprar('ChatGPT Plus')">Comprar</button></div>
+
+</div>
+</section>
+
+<footer>
+Entre em contato via WhatsApp
+</footer>
+
+<script>
+function comprar(produto) {
+    let numero = "5518981766576";
+    let mensagem = "Quero comprar " + produto;
+    let url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensagem);
+    window.location.href = url;
+}
+</script>
+
+</body>
+</html>
