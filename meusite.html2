@@ -128,7 +128,7 @@ Entre em contato via WhatsApp
 
 <script>
 function comprar(produto) {
-    let numero = "5518981766576";
+    let numero = "5518991407067";
     let mensagem = "Quero comprar " + produto;
     let url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensagem);
     window.location.href = url;
